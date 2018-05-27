@@ -26,15 +26,16 @@
       }
 
       .littleKitty {
-        height: 400px;
-        width: 600px;
+        height: auto;
+        width: 100%;
+        max-width: 600px;
         resize: both;
-        overflow: resize;
       }
 
       .caption {
         background-color:white;
-        width:600px;
+        width: 100%;
+        max-width: 600px;
       }
 
       .timeLineTable {
@@ -46,16 +47,33 @@
             border: 3px dotted black;
             }
 
-      .titleMrjay {
+      .titleMrJay {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 100px;
         text-align: center;
         text-decoration: underline overline wavy darkgrey;
+        
       }
     
+      
+      /* Mobile Responsiveness for .titleMrJay */
+      @media (max-width: 510px) {
+        .titleMrJay {
+          font-size: 60px;
+        }
+      }
+
+
+      .tryingToBeCute {
+        text-align: center;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+
       .timeLine {
           margin-top: 50px;
           margin-bottom: 40px;
+          text-align: justify;
+          text-justify: inter-word;
       }
 
       .timeLineDetails {
@@ -65,6 +83,12 @@
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       }
 
+      /* Mobile Responsiveness for .timeLineDetails */
+      @media (max-width: 480px) {
+      .timeLineDetails {
+        font-size: 14px;
+        }
+     }
       
 
       .VideoPics {
@@ -97,7 +121,14 @@
       }
 
       .littleTreat {
-      margin: auto;
+        margin-left:50px;
+        margin-right:50px;
+        height: 500px auto;
+        width: 100%;
+        max-width: 600px;
+        resize: both;
+
+
       }
 
       .contactDetails {
@@ -107,11 +138,16 @@
       padding-left:-60px;
       border-top: -60px;
       border-right: -60px;
-      
-      
-      
-
+      font-size: 20px;
       }
+
+      /* Mobile Responsiveness for .contactDetails */
+      @media (max-width: 480px) {
+          .contactDetails {
+          font-size: 14px;
+          }
+       }
+        
 
       .contactDetailsBox {
       background-color: rgb(72, 156, 252);
@@ -121,6 +157,7 @@
       margin-left: 60px;
       margin-right: 60px;
       border: 3px dotted hsl(221, 93%, 37%);
+      
       } 
 
 
@@ -192,19 +229,13 @@
         text-align: center;
       }
 
-      
-
-      
-
-      .titlemrjay {
-        text-align: center;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      .catsPaw:hover {
+        cursor: url("catsPaw.cur");
       }
 
-      .tryingtobecute {
-        text-align: center;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      }
+
+      
+
       .welcomePage {
         height: 100px;
         width: 100px;
@@ -215,22 +246,77 @@
 
       .footer {
         background-color: rgb(199, 169, 255);
+        overflow: auto;
+      }
+
+      
+
+      .coded {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        
         
       }
 
-      .foot {
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      .purpleCatMessageBox {
         content: center;
         padding: 70px 0;
-        margin-bottom:-20px;
+        background-color: rgb(197, 107, 224);
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-right: 70px;
+        border: 3px dotted hsl(300, 100%, 23%);
+        float: left;
+        display: inline-block;
+        border-radius: 20px 20px 20px 5px;
+        position:absolute;
       }
 
       .purpleCat {
+
         margin-left:10px;
-        margin-top:10px;
-        max-height: 205px;
-        float: left;
+        margin-top:77px;
+        float:left;
+        display: block;
       }
+      
+      .purpleCat3 {
+        margin-left:170px;
+        margin-top:100px;
+        float:center;
+        display: block;
+        position: absolute;
+        height: 300px;
+        width: 300px;
+      }
+
+      /* Mobile Responsiveness for .purpleCat3 */
+      @media (max-width: 530px) {
+        .purpleCat3 {
+          opacity: 0;
+        }
+     }
+
+      .purpleCat2 {
+        margin-top:50px;
+        float: right;
+        transform: scaleX(-1);
+        display: block;
+        
+        
+        
+      }
+
+      /* Mobile Responsiveness for .purpleCat2 */
+      @media (max-width: 830px) {
+        .purpleCat2 {
+        opacity: 0;
+        }
+     }
+
+
+
+
 
       /* CSS for back to top function */
       .topCat {
@@ -242,7 +328,6 @@
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
-        background-color:skyblue; /* Set a background color */
         color: black; /* Text color */
         cursor: pointer; /* Add a mouse pointer on hover */
         padding: 15px; /* Some padding */
@@ -290,6 +375,9 @@
     /* Font */
 
     .Roboto {
-      font-family: "Roboto";
+      font-family: 'Roboto', sans-serif;
     }
 
+    .size20px {
+      font-size: 20px;
+    }

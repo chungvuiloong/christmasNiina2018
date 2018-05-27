@@ -1,15 +1,21 @@
+
+/* First function*/
 function myFunction() {
     alert("Thank you for meowing us! We will meow back ASAP!");
 }
 
-var meow = document.getElementById("meow"); 
+/* UPDATED VERSION OF myFunction */
+function meowUs() { 
+    meow.play();
+    alert("Thank you for meowing us! We will meow back ASAP!");
+}
 
+
+/* Online Chat */
           function meowMessenger() { 
               meow.play();
               alert("How can I meow you today?");
           }
-
-
 
 
           // When the user scrolls down 20px from the top of the document, show the button

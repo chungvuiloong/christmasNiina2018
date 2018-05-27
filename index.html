@@ -6,6 +6,7 @@
           <!-- CSS-->
           <link rel="stylesheet" type="text/css" href="style.css">
           <link rel="stylesheet" type="text/css" href="topNavBar.css">
+          <link rel="stylesheet" type="text/css" href="imageSlider.css">
 
           <!-- Testing POPUP as of 25th May didnt work-->
           <link rel="stylesheet" type="text/css" href="meowMessengerPopUp.css">
@@ -16,31 +17,11 @@
           <!--Font -->
           <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
+          <!--TESTING MOBILE RESPONSIVE -->
+          <meta name="viewport" content="Width=device-width">
+
       </head>
-
-     
-
-      <!-- Meow Sound -->
-      <audio id="meow">
-          <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3" type="audio/ogg">
-      </audio>
-
-      <!-- Online Chat Messenger-->
-      <img class="meowMessenger" src="https://cdn3.vectorstock.com/i/thumb-large/57/97/cute-kitten-domestic-pet-pixel-saying-meow-vector-18645797.jpg" 
-        style="position: fixed; 
-        border-radius: 50px;" 
-        
-        onclick="meowMessenger()"/>
-
-        <!-- Javascript to make the meow and welcoming message up-->
-          <script>
-              var meow = document.getElementById("meow"); 
-
-              function meowMessenger() { 
-                  meow.play();
-                  alert("How can I meow you today?");
-              } 
-          </script>
+      
 
       <h1 class="slice"> &nbsp;    Slice Of Jay</h1>
 
@@ -61,10 +42,9 @@
               href="contact">Contact Us</a>
           <a class="testingDropdownMenu float-left black" id="navbar-right" 
               href="TestingDropdownMenu">Testing DropDown Menu</a>
-          <a class="float-right black" 
-              href="Float-right">Float right</a>
+          
       </div>
-
+     
       <br>
 
     <!-- Timeline picture of a cat-->
@@ -73,23 +53,25 @@
         <div class="timeLineTable">
       
           <br>
-          <h1 class="titleMrjay">MrJay</h1>
-            <h2 class="tryingtobecute">Trying to be cute as he can be.</h2>
+          <h2 class="titleMrJay">MrJay</h2>
+          <h2 class="tryingToBeCute">Trying to be cute as he can be.</h2>
     
               <!--Little kitty in a box-->
-              <div class="kittyBox">
+            <div class="kittyBox">
+
                   <center><img class="littleKitty" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Cute_grey_kitten.jpg"></img>
 
 
                   <!-- Caption class - A little comment about the kitty-->
-                  <figcaption class="caption">There is a cutie pie. Why are you so cute!!!</figcaption>
+                  <figcaption class="caption Roboto size20px">There is a cutie pie. Why are you so cute!!!</figcaption>
                   </center>
-              </div>
+
+            </div>
 
 
 
             <!-- Article - timeline -->
-            <div class="timeLine">
+            <div class="timeLine Roboto size20px">
               <ul class="timeLineDetails">
                 <p><b>Timeline of MrJay:</b></p>
 
@@ -106,41 +88,46 @@
               </ul>
 
             </div>
+
           </div>
+
         </body>
         
         <section class="VideoPics">     
               <!-- Quote by MrJay-->
                 <blockquote class="slogan">"Cuter than other furry little creatures. Workship me, humans!"</blockquote>
 
-                <p class="naughtyTreat">You know you want to! Here is a little <strike>catsnip</strike>&nbsp;  treat!</p>
+                <p class="naughtyTreat">You know you meow to! Here is a little <strike>catsnip</strike>&nbsp;  treat!</p>
 
               <!--Embedded video-->
 
-                <center><iframe class="littleTreat" 
-                                style="margin: auto"
-                                width="560" 
-                                height="315" 
-                                align="center" 
-                                src="https://www.youtube.com/embed/oKI-tD0L18A" 
-                                frameborder="0" 
-                                allow="autoplay; encrypted-media" 
-                                allowfullscreen></iframe></center>
+                <center>
+                  <center><iframe class="littleTreat" 
+                    style="margin: auto"
+                    width="560" 
+                    height="315" 
+                    align="center" 
+                    src="https://www.youtube.com/embed/oKI-tD0L18A" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen></iframe></center>
 
                 <!-- --Testing Picture gallery-->
 
                     <p><center>Just testing Automatic picture gallery ok......</center></p>
+
+
          </section>
                     
 
               <!--Contacts-->
 
-          <div class="contactDetails">
-            <div class="contactDetailsBox">
+          <div class="contactDetails Roboto">
+            <div class="contactDetailsBox catsPaw">
 
 
               <p class="meow">Know more about MrJay. Press Your Paw  
-                  <a href="https://sliceofjay.wordpress.com/">Here
+                  <a href="https://sliceofjay.wordpress.com/" >Here
                     </a>
                 </p>
 
@@ -163,23 +150,24 @@
       
         <!--Contact form details-->
         <center>
-        <table class="contactUsForm">
+        <table class="contactUsForm ">
             
       
             <!--Firstname of Cats-->
               <tr>
                 <div class ="fName">
                   <td class="td1"><label for="fName">First Name :</label></td>
-                  <td class="td2"><input type="text" id="fName" name="firstname" placeholder="Your first name.."></td>
+                  <td class="td2"><input type="text" name="firstname" placeholder="Your first name.."></td>
                 </div>
               </tr>
       
               <!--Lastname of Cats-->
               <tr>
-              <div class="lName">
-              <td class="td1"><label for="lName">Last Name :</label></td>
-              <td class="td2"><input type="text" id="lName" name="lastname" placeholder="Your last name.."></td>
-              </div></tr>
+                <div class="lName">
+                  <td class="td1"><label for="lName">Last Name :</label></td>
+                  <td class="td2"><input type="text" name="lastname" placeholder="Your last name.."></td>
+                </div>
+              </tr>
       
               <!--Contact information of Cats-->
               <tr>
@@ -193,8 +181,9 @@
               <tr>
                   <td>
                   </td>
+
                   <td>
-                    <select style="text-align: center;" id="country" name="country">
+                    <select style="text-align: center;" name="country">
                       <option value="malaysia">Malaysia</option>
                       <option value="newZealand">New Zealand</option>
                       <option value="australia">Australia</option>
@@ -205,6 +194,7 @@
               </tr>
       
               <!--Comment Box-->
+
               <!--
               <tr>
                   <td>
@@ -227,8 +217,8 @@
       
                 
                 <td>
-                  <div class="submit">
-                    <button onclick= "myFunction()">Submit</button>
+                  <div class="submit catsPaw">
+                    <button onclick= "meowUs();">Meow us Now!</button>
                   </div>
                 </td>
               </tr>
@@ -245,14 +235,28 @@
           <!-- footer -->
           <div class="footer">
               <img src="http://www.clker.com/cliparts/G/Y/h/T/E/D/purple-cat-md.png" class="purpleCat"></img>
-              <div class="foot">
-                <p class="coded">Meowed, Pawed, Coded by <a href="https://sliceofjay.wordpress.com/">MrJay</a></p>
-                </div>
+
+
+              
+
+
+
+            <div class="purpleCatMessageBox">
+                  
+
+                  <span class="coded size20px">Meowed, Pawed, Coded by <a href="https://sliceofjay.wordpress.com/">MrJay</a>
+                  </span>
+
 
                 <br>
-          </div>
+            </div>
 
-          
+            <img src="http://www.supercoloring.com/sites/default/files/silhouettes/2015/05/cat-purple-silhouette.svg" class="purpleCat3"></img>
+
+            <img src="http://www.clker.com/cliparts/o/y/c/I/1/1/purple-cat-dancing-md.png" class="purpleCat2"></img>
+
+
+
           <!-- Meow Sound -->
 
           <audio id="meow" src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3">
@@ -263,19 +267,28 @@
 
           <img class="topCat" src="http://i.imgur.com/LrX2y.png?1"  onclick="topFunction()"/>
 
-          <!-- Welcome Page
-          <script class="welcomePage" type="text/javascript" style="height: 100px">
-            alert("Welcome to my aMEOWzing page.");
-            
-            </script>
-            -->
+          <!-- Welcome Page-->
 
             <div class="alert">
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                Welcome to my aMEOWzing page!.
-              </div>
+                Welcome to my aMEOWzing page!
+            </div>
 
+
+          <!-- Online Chat Messenger-->
+              <img class="meowMessenger" src="https://cdn3.vectorstock.com/i/thumb-large/57/97/cute-kitten-domestic-pet-pixel-saying-meow-vector-18645797.jpg" 
+              style="position: fixed; 
+              border-radius: 50px;" 
               
+              onclick="meowMessenger()"/>
 
+          <!-- Javascript to make the meow and welcoming message up-->
+
+          <script>
+               var meow = document.getElementById("meow");
+          </script>
+              
+                
+     
 
 </html>

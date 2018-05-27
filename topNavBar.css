@@ -1,8 +1,8 @@
-<!-- TOP NAVIGATION-->
+/* TOP NAVIGATION */
 
       .topNavBar {
-    overflow: auto;
-      
+        overflow: auto;
+        float: left;
       }
 
       .home {
@@ -23,6 +23,16 @@
         align: right;
         color: rgba(44, 250, 3, 0.5);
       }
+
+
+    /* Mobile Responsiveness for .topNavBar */
+    @media (max-width: 480px) {
+      .topNavBar {
+        display: block;
+       
+      }
+    }
+
 
     .topNavBar a {
       
