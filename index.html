@@ -311,20 +311,27 @@
 
                   <div id="fb-root"></div>
                   <script>(function(d, s, id) {
-                    var meow = document.getElementById("meow");
+                    // var meow = document.getElementById("meow");
                     var js, fjs = d.getElementsByTagName(s)[0];
                     if (d.getElementById(id)) return;
                     js = d.createElement(s); js.id = id;
                     console.log("what is d?");
                     console.log(d);
-                    meow.play();
+                    // meow.play();
                     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
                     fjs.parentNode.insertBefore(js, fjs);
-                  }(document, 'script', 'facebook-jssdk'));</script>
+                  }(document, 'script', 'facebook-jssdk'));
+                  
+                  function meowMessenger(){
+                    var meow = document.getElementById("meow");
+                    meow.play();
+                  }
+                  </script>
 
                   <!-- Your customer chat code -->
                   
                     <div class="fb-customerchat"
+                      onClick = "meowMessenger()"
                       attribution="setup_tool"
                       page_id="1748676725208976"
                       theme_color="#0084ff"
