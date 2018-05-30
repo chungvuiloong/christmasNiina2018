@@ -311,6 +311,9 @@
 
                   <div id="fb-root"></div>
                   <script>(function(d, s, id) {
+                    console.log("inside of facebook chatbax");
+                    var meow = document.getElementById("meow");
+                    console.log(meow);
                     var js, fjs = d.getElementsByTagName(s)[0];
                     if (d.getElementById(id)) return;
                     js = d.createElement(s); js.id = id;
@@ -326,6 +329,7 @@
                       theme_color="#0084ff"
                       logged_in_greeting="Hi there! How can we meow you today?"
                       logged_out_greeting="Hi there! How can we meow you today?">
+                  
                     </div>
                 
 
