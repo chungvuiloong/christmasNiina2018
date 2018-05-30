@@ -318,17 +318,23 @@
                 js = d.createElement(s); js.id = id;
                 js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
                 fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>
+              }(document, 'script', 'facebook-jssdk'));
+              
+              var meow = document.getElementById("meow");
+              
+              </script>
 
               <!-- Your customer chat code -->
               <div class="fb-customerchat"
                 attribution="setup_tool"
                 page_id="1748676725208976"
-                logged_in_greeting="Hi! How can we help you?"
-                logged_out_greeting="Hi! How can we help you?">
+                logged_in_greeting="Hi there! How can we meow you today?"
+                logged_out_greeting="Hi there! How can we meow you today">
               </div>
                             
-
+              <script>
+                var meow = document.getElementById("meow");
+           </script>
               
               
 
@@ -338,9 +344,7 @@
 
           <!-- Javascript to make the meow and welcoming message up-->
 
-          <script>
-               var meow = document.getElementById("meow");
-          </script>
+          
               
                 
      
