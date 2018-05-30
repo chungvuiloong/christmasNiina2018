@@ -309,15 +309,17 @@
               <!-- TESTING Online Chat Messenger-->
           <body>
               <!-- Load Facebook SDK for JavaScript -->
-              <div class="meowMessenger2" onclick="meowMessenger()" src="https://cdn3.vectorstock.com/i/thumb-large/57/97/cute-kitten-domestic-pet-pixel-saying-meow-vector-18645797.jpg"
+              <div class="meowMessenger2" src="https://cdn3.vectorstock.com/i/thumb-large/57/97/cute-kitten-domestic-pet-pixel-saying-meow-vector-18645797.jpg"
               onclick="meowMessenger()"></div>
 
               <script>(function(d, s, id) {
+                var meow = document.getElementById("meow");
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
                 js = d.createElement(s); js.id = id;
                 js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
                 fjs.parentNode.insertBefore(js, fjs);
+                meow.play();
               }(document, 'script', 'facebook-jssdk'));
               
               var meow = document.getElementById("meow");
