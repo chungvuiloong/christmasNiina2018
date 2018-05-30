@@ -8,14 +8,18 @@
           <link rel="stylesheet" type="text/css" href="topNavBar.css">
           <link rel="stylesheet" type="text/css" href="imageSlider.css">
 
+
           <!-- Testing POPUP as of 25th May didnt work-->
           <link rel="stylesheet" type="text/css" href="meowMessengerPopUp.css">
+
 
           <!-- Javacsript-->
           <script type="text/javascript" src="javascript.js"></script>
 
+
           <!--Font -->
           <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 
           <!--TESTING MOBILE RESPONSIVE -->
           <meta name="viewport" content="Width=device-width">
@@ -27,10 +31,10 @@
 
       <!-- Header - The top navigation bar TESTING!!!! -->
       <div class="topNavBar" 
-          style="
-                font-family:'Courier New', Courier, monospace;
-                margin-top: -60px;
-                background-color: lightgrey;">
+           style="
+            font-family:'Courier New', Courier, monospace;
+            margin-top: -60px;
+            background-color: lightgrey;">
     
           <a class="home border-right float-left black" 
               href="home">Home</a>
@@ -45,14 +49,14 @@
           
       </div>
      
-      <br>
+      <br/>
 
     <!-- Timeline picture of a cat-->
       <body>
 
         <div class="timeLineTable">
       
-          <br>
+          <br/>
           <h2 class="titleMrJay">MrJay</h2>
           <h2 class="tryingToBeCute">Trying to be cute as he can be.</h2>
     
@@ -87,8 +91,11 @@
                   
               </ul>
 
+            <!--div class="timeLine-->
             </div>
 
+
+          <!--Closing div tag for "timeLineTable"-->
           </div>
 
         </body>
@@ -101,7 +108,7 @@
 
               <!--Embedded video-->
 
-                <center>
+              
                   <center><iframe class="littleTreat" 
                     style="margin: auto"
                     width="560" 
@@ -117,10 +124,26 @@
                     <p><center>Just testing Automatic picture gallery ok......</center></p>
 
 
-         </section>
-                    
+                  <div class="picGalleryBox">
+                    <div class="picGallery">
+                        <img class="catPic1" src="https://i.pinimg.com/originals/81/6d/a5/816da533638aee63cfbd315ea24cccbd.jpg" width="500" height="400"/>
+                        <img class="catPic2" src="https://d3n8a8pro7vhmx.cloudfront.net/taxpayers/pages/679/attachments/original/1499663166/4-ways-cheer-up-depressed-cat.jpg?1499663166" width="500" height="400"/>
+                        <img class="catPic3" src="https://i.pinimg.com/originals/2e/18/ab/2e18ab3f71b73c6719b04c81625bb922.jpg" width="500" height="400"/>
+                        <img class="catPic4" src="https://images.pexels.com/photos/62321/kitten-cat-fluffy-cat-cute-62321.jpeg?cs=srgb&dl=animal-pet-cute-62321.jpg&fm=jpg" width="500" height="400"/>
+                    </div>
+                  </div>
 
-              <!--Contacts-->
+
+
+
+
+
+        <!-- Closing tag for videoPics-->
+        </section>
+
+
+
+          <!--Contacts-->
 
           <div class="contactDetails Roboto">
             <div class="contactDetailsBox catsPaw">
@@ -234,27 +257,28 @@
 
           <!-- footer -->
           <div class="footer">
-              <img src="http://www.clker.com/cliparts/G/Y/h/T/E/D/purple-cat-md.png" class="purpleCat"></img>
-
-
-              
-
+              <img class="purpleCat" src="http://www.clker.com/cliparts/G/Y/h/T/E/D/purple-cat-md.png" >
+            
+              <img class="heart" src="https://www.chimpstickers.com/wp-content/uploads/2017/11/cute-things025-heart.png" ></img>
+            
+            </img>
 
 
             <div class="purpleCatMessageBox">
                   
 
-                  <span class="coded size20px">Meowed, Pawed, Coded by <a href="https://sliceofjay.wordpress.com/">MrJay</a>
+                  <span class="coded size20px"> Meowed, Pawed, Coded by <a href="https://sliceofjay.wordpress.com/">MrJay</a>
                   </span>
 
 
                 <br>
             </div>
 
-            <img src="http://www.supercoloring.com/sites/default/files/silhouettes/2015/05/cat-purple-silhouette.svg" class="purpleCat3"></img>
+            <img class="purpleCat3" src="http://www.supercoloring.com/sites/default/files/silhouettes/2015/05/cat-purple-silhouette.svg" ></img>
 
-            <img src="http://www.clker.com/cliparts/o/y/c/I/1/1/purple-cat-dancing-md.png" class="purpleCat2"></img>
+            <img class="purpleCat2" src="http://www.clker.com/cliparts/o/y/c/I/1/1/purple-cat-dancing-md.png" ></img>
 
+            
 
 
           <!-- Meow Sound -->
@@ -281,6 +305,34 @@
               border-radius: 50px;" 
               
               onclick="meowMessenger()"/>
+
+              <!-- TESTING Online Chat Messenger-->
+          <body>
+              <!-- Load Facebook SDK for JavaScript -->
+              <div class="meowMessenger2"></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+              <!-- Your customer chat code -->
+              <div class="fb-customerchat"
+                attribution="setup_tool"
+                page_id="1748676725208976"
+                logged_in_greeting="Hi! How can we help you?"
+                logged_out_greeting="Hi! How can we help you?">
+              </div>
+                            
+
+              
+              
+
+
+
+            </body>
 
           <!-- Javascript to make the meow and welcoming message up-->
 
