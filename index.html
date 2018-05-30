@@ -317,6 +317,8 @@
                     js = d.createElement(s); js.id = id;
                     console.log("what is d?");
                     console.log(d);
+                    console.log("js?", js)
+                    console.log("true or false?", d.getElementById(id))
                     // meow.play();
                     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
                     fjs.parentNode.insertBefore(js, fjs);
@@ -331,7 +333,6 @@
                   <!-- Your customer chat code -->
                   
                     <div class="fb-customerchat"
-                      onClick = "meowMessenger()"
                       attribution="setup_tool"
                       page_id="1748676725208976"
                       theme_color="#0084ff"
