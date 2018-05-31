@@ -158,11 +158,11 @@
                 <p class="contact"><center>Want to meow us? Press your paw on the icons below!!</center></p>
 
                 <center>
-                  <a href="https://www.facebook.com/jirimi.kuriyami"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" style="width:50px;height:50px;"></img></ul></a>
+                  <a href="https://www.facebook.com/jirimi.kuriyami" class="facebookLogo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" style="width:50px;height:50px;"></img></ul></a>
 
-                  <a href="https://twitter.com/jirimicvl"><img src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" style="width:50px;height:50px;"></img></ul></a>
+                  <a href="https://twitter.com/jirimicvl" class="twitterLogo"><img src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" style="width:50px;height:50px;"></img></ul></a>
 
-                  <a href="https://www.linkedin.com/in/jirimi-chung-540079123/"><img src="https://cdn.pixabay.com/photo/2017/08/23/22/59/linked-in-2674741_960_720.png" style="width:50px;height:50px;"></img></ul></a>
+                  <a href="https://www.linkedin.com/in/jirimi-chung-540079123/ " class="linkedLogo"><img src="https://cdn.modernghana.com/images/content/p73wnb0nmh_likedin.jpg" style="width:50px;height:50px;"></img></ul></a>
 
                 </center>
               </div>
@@ -278,13 +278,7 @@
 
             <img class="purpleCat2" src="http://www.clker.com/cliparts/o/y/c/I/1/1/purple-cat-dancing-md.png" ></img>
 
-            
 
-
-          <!-- Meow Sound -->
-
-          <audio id="meow" src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3">
-          </audio>
           
 
           <!-- Back to the top button-->
@@ -294,8 +288,17 @@
           <!-- Welcome Page-->
 
             <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                Welcome to my aMEOWzing page!
+                <div class="welcomingMessage">Welcome to my aMEOWzing page!</div>
+
+                <br/>
+
+                <div class="closebtn" onclick="this.parentElement.style.display='none';">&times;</div>
+                <div class="hiYou">Meow, Whats your name?</div>
+                
+
+                <br/>
+
+
             </div>
 
 
@@ -303,6 +306,7 @@
               <img class="meowMessenger" src="https://cdn3.vectorstock.com/i/thumb-large/57/97/cute-kitten-domestic-pet-pixel-saying-meow-vector-18645797.jpg" 
               style="position: fixed; 
               border-radius: 50px;" 
+
               onclick="meowMessenger()"/>
 
               <!-- TESTING Online Chat Messenger-->
@@ -330,7 +334,14 @@
                 
 
 
+  
 
+
+          <!-- Meow Sound -->
+
+          <audio id="meow" src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3">
+
+          </audio>
               <script>
                 var meow = document.getElementById("meow");
               </script>
@@ -341,11 +352,8 @@
 
             </body>
 
-          <!-- Javascript to make the meow and welcoming message up-->
-
           
-              
-                
-     
+
+
 
 </html>
