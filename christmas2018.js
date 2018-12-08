@@ -3,7 +3,7 @@
 
 
     // Set the date we're counting down to
-    var countDownDate = new Date("Dec 24, 2018 14:00:00 GMT+0200").getTime();
+    var countDownDate = new Date("Dec 24, 2018 21:00:00 GMT+0200").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -33,12 +33,11 @@
     }
 }, 1000);
 
-
 function disableClick(){
-        document.onclick=function(event){
-          if (event.button == 2) {
-            alert('Right Click Message');
-            return false;
-          }
-        }
+    document.onclick=function(event){
+      if (event.button == 2) {
+        alert('Right Click Message');
+        return false;
       }
+    }
+  }
