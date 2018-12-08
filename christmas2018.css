@@ -1,0 +1,11 @@
+body {
+    /*   font */
+      font-family: 'Great Vibes', cursive;
+      text-align:center;
+      font-size: 60px;
+      margin-top: 0px;
+    }
+    
+     #content {
+      visibility: hidden;
+    }
