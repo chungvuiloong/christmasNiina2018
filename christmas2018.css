@@ -1,4 +1,4 @@
-body {
+    body {
     /*   font */
       font-family: 'Great Vibes', cursive;
       text-align:center;
@@ -6,6 +6,10 @@ body {
       margin-top: 0px;
     }
     
+    #display {
+      margin-top: 100px;
+    }
+
      #content {
       visibility: hidden;
     }
