@@ -3,7 +3,7 @@
 
 
     // Set the date we're counting down to
-    var countDownDate = new Date("Dec 24, 2018 18:06:00 GMT+0200").getTime();
+    var countDownDate = new Date("Dec 24, 2018 18:30:00 GMT+0200").getTime();
 
     var loveMusic = document.getElementById("loveMusic");
 
